@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Shizuru&display=swap');
+
+html {
+  height: 100vh;
+  background-image: url('bingo.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: lighten;
+}
+
+body {
+  margin: 1% 5%;
+  background-color: transparent;
+}
+
+h1 {
+  font-size: 4em;
+  color: white;
+  margin-bottom: 30px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.nao-sorteado {
+  padding: 4px 0px;
+  width: 34px;
+  border-radius: 30px;
+  background-color: #46350d;
+  display: inline-block;
+  color: white;
+  box-shadow: inset -1px 1px 1px #c9c9c9, inset 0px 0px 6px #ffffff;
+}
+
+.sorteado {
+  padding: 4px 0px;
+  width: 34px;
+  display: inline-block;
+  border-radius: 50px;
+  background-color: white;
+  background: radial-gradient(circle at 100px 100px, #5cabff, white);
+}
+
+.sorteado span {
+  border-radius: 30px;
+  padding: 2px;
+}
+
+.bola-sorteada {
+  display: block;
+	width: 150px;
+	height: 150px;
+	margin: auto;
+	border-radius: 50%;
+	background-color: white;
+	box-shadow: inset -25px -15px 40px rgba(0,0,0,.3);
+	background-image: linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+	position: relative;
+}
+
+.numero-sorteado {
+  font-size: 3em;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 30px;
+  left: 30px;
+  text-align: center;
+  border: 3px solid black;
+  font-weight: bold;
+  border-radius: 45px;
+  padding: 7px 7px;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: 0;
+}
+
+.botao-sortear {
+  margin-top: 40px;
+}
+
+@supports (position:sticky) {
+  .Reactable .rt-table {
+    background: unset;
+  }
+}
+
+

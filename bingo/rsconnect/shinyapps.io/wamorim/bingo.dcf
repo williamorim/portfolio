@@ -1,0 +1,13 @@
+name: bingo
+title: bingo
+username:
+account: wamorim
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8302661
+bundleId: 6842252
+url: https://wamorim.shinyapps.io/bingo/
+when: 1676321357.94029
+lastSyncTime: 1676321357.94032
+asMultiple: FALSE
+asStatic: FALSE
