@@ -1,0 +1,13 @@
+name: contador-cliques
+title: contador-cliques
+username:
+account: wamorim
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8302477
+bundleId: 6842206
+url: https://wamorim.shinyapps.io/contador-cliques/
+when: 1676320363.26599
+lastSyncTime: 1676320363.26601
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,0 +1,29 @@
+html {
+  height: 100vh;
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+}
+
+body {
+  margin: 10% 10%;
+  background-color: transparent;
+}
+
+
+.bttn-gradient.bttn-md, .bttn-simple.bttn-md {
+  padding: 15px 32px;
+}
+
+.bttn-gradient.bttn-warning, .bttn-simple.bttn-warning {
+  font-size: 3em;
+}
+
+.contagem-texto {
+  font-size: 3em;
+  color: white;
+}
+
+.contagem {
+  font-size: 5em;
+  color: white;
+}
