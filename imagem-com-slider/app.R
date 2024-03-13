@@ -18,43 +18,46 @@ ui <- shinyUI(
       mainPanel(
         div(
           class = "img-comp-container",
-          div(
-            class = "img-comp-img",
-            imageOutput("imagem1", width = "640px", height = "426px")
-          ),
-          div(
-            class = "img-comp-img img-comp-overlay",
-            imageOutput("imagem2", width = "640px", height = "426px")
-          )
+          uiOutput("imagem1", class = "img-comp-img"),
+          uiOutput("imagem2", class = "img-comp-img img-comp-overlay")
         )
       )
-    ),
-    tags$script("initComparisons();")
+    )
   )
 )
 
 server <- function(input, output, session) {
 
-  output$imagem1 <- renderImage({
+  output$imagem1 <- renderUI({
 
     if (isTruthy(input$imagem1)) {
-      list(src = input$imagem1$datapath)
+      tags$img(src = input$imagem1$datapath)
     } else {
-      list(src = "www/horizon_pb.jpg")
+      tags$img(
+        src = "imagens_satelite_arcelormittal_barragem_de_rejeitos_2023_04---2018.jpg",
+        width = "600px"
+      )
     }
 
-  }, deleteFile = FALSE)
+  })
 
-  output$imagem2 <- renderImage({
+  output$imagem2 <- renderUI({
 
     if (isTruthy(input$imagem2)) {
-      list(src = input$imagem2$datapath)
+      tags$img(src = input$imagem2$datapath)
     } else {
-      list(src = "www/horizon.jpg")
+      tagList(
+        tags$img(
+          src = "imagens_satelite_arcelormittal_barragem_de_rejeitos_2023_04---2019.jpg",
+          width = "600px"
+        ),
+        tags$script("initComparisons();")
+      )
+
     }
 
-  }, deleteFile = FALSE)
+  })
 
 }
 
-shinyApp(ui, server)
+shinyApp(ui, server, options = list(launch.browser = FALSE, port = 4243))
