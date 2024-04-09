@@ -4,6 +4,7 @@ imagens <- list.files("www")
 
 ui <- bslib::page_navbar(
   title = "Shiny + Mansory",
+  underline = FALSE,
   bslib::nav_panel(
     title = "Sem mansory",
     tags$head(
@@ -31,6 +32,14 @@ ui <- bslib::page_navbar(
   bslib::nav_panel(
     title = "Com mansory",
     uiOutput("figuras")
+  ),
+  bslib::nav_spacer(),
+  bslib::nav_item(
+    tags$a(
+      href = "https://github.com/williamorim/portfolio/tree/main/mansory",
+      target = "_blank",
+      bsicons::bs_icon("github")
+    )
   )
 )
 

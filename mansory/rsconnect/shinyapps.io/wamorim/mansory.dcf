@@ -1,0 +1,12 @@
+name: mansory
+title: mansory
+username: wamorim
+account: wamorim
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11714240
+bundleId: 8474203
+url: https://wamorim.shinyapps.io/mansory/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
