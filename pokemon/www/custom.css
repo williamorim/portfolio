@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+  --cor_primaria: #355fab;
+  --cor_secundaria: #ffcc02;
+  --cor_valuebox: #ffcc0255;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.coluna_imagem {
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.tipo_pkmn {
+  font-size: 16pt;
+  letter-spacing: 4px;
+}
+
+.logo_pkmn {
+  width: 150px;
+  margin-right: 32px;
+}
+
