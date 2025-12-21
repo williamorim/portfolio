@@ -1,3 +1,3 @@
 # portfolio
 
-Portfolio de Shiny apps que fiz em cursos, palestras ou por diversão.
+Portfolio de aplicativos que fiz em cursos, palestras ou por diversão.
